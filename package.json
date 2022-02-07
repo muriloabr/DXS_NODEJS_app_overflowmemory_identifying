@@ -1,0 +1,26 @@
+{
+  "name": "dxs_nodejs_app_overflowmemory_identifying",
+  "version": "1.0.0",
+  "description": "Simulando e identificando meios de vazamento de memoria que podem acontecer em qualquer aplicação",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set CLIMEM=8999; node -r climem index.js",
+    "climem": "npx climem 8999"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muriloabr/DXS_NODEJS_app_overflowmemory_identifying.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muriloabr/DXS_NODEJS_app_overflowmemory_identifying/issues"
+  },
+  "homepage": "https://github.com/muriloabr/DXS_NODEJS_app_overflowmemory_identifying#readme",
+  "dependencies": {
+    "climem": "^1.0.3"
+  }
+}
